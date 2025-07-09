@@ -48,6 +48,19 @@ const ServicePage = () => {
     "Skin Rejuvenation": ImageAssets.service2,
     Injectables: ImageAssets.service3,
     "Acne Treatment": ImageAssets.service4,
+    "Skin Cancer Screenings": ImageAssets.skinCancer,
+  "Mole & Skin Tag Removal": ImageAssets.moleSkin,
+  "Cryotherapy": ImageAssets.cryotherapy,
+  "Excision Procedures": ImageAssets.excisionProcedures,
+  "Eczema & Psoriasis Care": ImageAssets.eczemaPsoriasis,
+  "Nail Care": ImageAssets.nailCare,
+  "Rosacea Treatment": ImageAssets.rosaceaTreatment,
+  "Hair & Scalp Care": ImageAssets.hairScalp,
+  "Vitiligo Management": ImageAssets.vitiligoManagement,
+  
+
+  
+    
   };
 
   return (

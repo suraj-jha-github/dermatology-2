@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Select, { components } from "react-select";
 import { FaChevronDown } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 import "./Services.css";
 import { Link } from "react-router-dom";
 import serviceData from "../../data/serviceData";
@@ -155,13 +156,27 @@ const Services = ({ selectedTab, setSelectedTab }) => {
                       onClick={() => setDermOpen((open) => !open)}
                     >
                       {tab}
-                      <span className="ml-2 text-sm">{dermOpen ? '▼' : '▶'}</span>
+                      <span className="ml-20 text-base self-center flex items-center" style={{ marginTop: '2px' }}>
+                        <FaChevronRight style={{marginLeft: '60px', transform: dermOpen ? 'rotate(90deg)' : 'rotate(0deg)', transition: 'transform 0.2s', verticalAlign: 'middle' }} />
+                      </span>
                     </div>
                     {dermOpen && (
                       <ul style={{ marginTop: 0, marginLeft: 0 }}>
                         {dermatologySubServices.map((sub) => (
                           <li key={sub.path} className="service-page-sidebar-li" style={{ listStyle: 'none' }}>
-                            <Link to={sub.path} style={{ color: 'inherit', textDecoration: 'none', display: 'block', width: '100%' }}>
+                            <Link
+                              to={sub.path}
+                              style={{
+                                color: 'inherit',
+                                textDecoration: 'none',
+                                display: 'block',
+                                width: '100%',
+                                whiteSpace: 'nowrap',
+                                overflow: 'hidden',
+                                textOverflow: 'ellipsis',
+                                maxWidth: '220px',
+                              }}
+                            >
                               {sub.label}
                             </Link>
                           </li>

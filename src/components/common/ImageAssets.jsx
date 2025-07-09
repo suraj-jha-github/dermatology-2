@@ -52,12 +52,24 @@ import beforeAfterCd2 from '../../assets/images/before-after-cs2.png'
 import beforeAfterAt1 from '../../assets/images/before-after-at1.png'
 import beforeAfterAt2 from '../../assets/images/before-after-at2.png';
 import logoFooter from '../../assets/images/footer-logo.png';
+import skinCancer from '../../assets/images/skin-cancer.jpg';
+import cryotherapy from '../../assets/images/cryotherapy.jpg';
+import excisionProcedures from '../../assets/images/excision-procedures.jpg';
+import moleSkin from '../../assets/images/mole-skin.jpg';
+import nailCare from '../../assets/images/nail-care.jpg';
+import rosaceaTreatment from '../../assets/images/rosacea-Treatment.jpg';
+import hairScalp from '../../assets/images/hair-and-scalp.jpg';
+import vitiligoManagement from '../../assets/images/Vitiligo-Management.jpg';
+
+import eczemaPsoriasis from '../../assets/images/eczema-Psoriasis-Care.jpg';
+
+
 
 
 
 
 const ImageAssets={
-    logo,rejuvenatingImage,hamburgerIcon,drAlicaImage,drJulianaImage,drMikkilineni,crossIconSidebar,cosmeticServices,injectables,acneTreatment,Expert1,Expert2,aboutImage1,aboutJulianaCotler,aboutRadhaMikkilinen,officeImage1,officeImage2,officeImage3,officeImage4,careResourceImage,payBillImage,blogBanner,blog1,blog2,blog3,blog4,blog5,beforeAfterImg,beforeAfter1,beforeAfter2,contactImage,posterImage,beforeandafter,aboutTest,aboutOffice,service1,service2,service3,service4,skinreju,service5,blog2Hero,beforeAfterSR3,beforeAfterIn1,beforeAfterIn2,beforeAfterIn3,beforeAfterCd1,beforeAfterCd2,beforeAfterAt1,beforeAfterAt2,logoFooter
+    logo,rejuvenatingImage,hamburgerIcon,drAlicaImage,drJulianaImage,drMikkilineni,crossIconSidebar,cosmeticServices,injectables,acneTreatment,Expert1,Expert2,aboutImage1,aboutJulianaCotler,aboutRadhaMikkilinen,officeImage1,officeImage2,officeImage3,officeImage4,careResourceImage,payBillImage,blogBanner,blog1,blog2,blog3,blog4,blog5,beforeAfterImg,beforeAfter1,beforeAfter2,contactImage,posterImage,beforeandafter,aboutTest,aboutOffice,service1,service2,service3,service4,skinreju,service5,blog2Hero,beforeAfterSR3,beforeAfterIn1,beforeAfterIn2,beforeAfterIn3,beforeAfterCd1,beforeAfterCd2,beforeAfterAt1,beforeAfterAt2,logoFooter,moleSkin,excisionProcedures,skinCancer,cryotherapy,nailCare,rosaceaTreatment,hairScalp,vitiligoManagement,eczemaPsoriasis
 };
 
 export default ImageAssets;
