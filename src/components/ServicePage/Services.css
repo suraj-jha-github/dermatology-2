@@ -1,0 +1,576 @@
+.service-page-wrapper {
+  display: flex;
+  padding: 80px 100px;
+  gap: 100px;
+}
+
+.service-page-sidebar {
+  background-color: #52606f;
+  padding: 40px 0;
+  width: 386px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 40px;
+}
+
+.service-page-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 35px;
+  color: white;
+  padding: 0 55px;
+  margin-bottom: 16px;
+}
+
+.service-page-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-page-sidebar li {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  /* line-height: 58px; */
+  color: rgba(255, 255, 255, 0.6);
+  padding: 10px 55px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.service-page-sidebar li:hover,
+.service-page-sidebar li.active {
+  background-color: #626e7c;
+}
+
+.service-page-content {
+  flex: 1;
+}
+
+.service-page-content > .heading-main {
+  font-family: "Cormorant", serif;
+  font-size: 4.37rem;
+  line-height: 80px;
+  color: #000;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+
+.service-page-subheading {
+  font-family: "Cormorant", serif;
+  font-size: 44px;
+  color: #475666;
+}
+
+.service-page-content p {
+  font-family: "Poppins", sans-serif;
+    white-space: pre-line;
+    padding-right: 55px;
+    letter-spacing: 0;
+    font-size: 1.0625rem;
+    line-height: 2.22rem;
+    letter-spacing: 0.1px;
+    margin-top: 5px;
+    margin-bottom: 0.5rem;
+    color: #676767;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 500;
+}
+/* .service-page-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  line-height: 45px;
+  color: #7a7979;
+  white-space: pre-line;
+  padding-right: 55px;
+} */
+
+/* Bullet Paragraph Style */
+.bullet-paragraph {
+  position: relative;
+  padding-left: 35px;
+  font-size: 20px;
+  line-height: 38px;
+  color: #5c5c5c;
+  margin: 20px 0px;
+  padding-right: 30px;
+}
+
+.bullet-paragraph::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #313942;
+  font-size: 26px;
+  line-height: 38px;
+}
+
+.service-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.call-btn-service {
+  flex: 1 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  padding: 11px 10px;
+  background-color: #818992;
+  color: white;
+  border: none;
+  cursor: pointer;
+  line-height: 39px;
+  /* margin: 20px 20px 0 0; */
+  justify-content: center;
+  text-align: center;
+}
+.appt-btn-service {
+  flex: 1 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  padding: 11px 10px;
+  background-color: #505e5d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  line-height: 39px;
+  /* margin: 20px 20px 0 0; */
+  justify-content: center;
+  text-align: center;
+}
+
+.call-btn-service {
+  background-color: #818992;
+}
+
+.appt-btn-service {
+  background-color: #505e6d;
+}
+
+.custom-bullets {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.service-buttons a {
+  text-decoration: none;
+}
+.service-section-block h3 {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  color: #2d3e50;
+}
+
+.service-section-block p {
+  margin: 0.5rem 0;
+}
+
+.faq-block {
+  margin-top: 1.5rem;
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.faq-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #2d3e50;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  /* font-weight: bold; */
+  flex-shrink: 0;
+}
+
+.faq-icon:hover {
+  cursor: pointer;
+}
+
+.faq-block hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 0.8rem 0;
+}
+
+.heading-h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  margin: 50px 0 0 0;
+  letter-spacing: 0;
+  line-height: 44px;
+  color: #000;
+  font-weight: 400;
+}
+.heading-h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  margin: 20px 0;
+  letter-spacing: 0;
+  line-height: 44px;
+  color: #475666;
+}
+.heading-h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  margin: 20px 0;
+  letter-spacing: 0;
+  line-height: 44px;
+  color: #475666;
+}
+.bullet-heading {
+      font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    margin: 0px 0;
+    letter-spacing: 0;
+    line-height: 22px;
+    color: #475666;
+    position: relative;
+    padding-left: 1.5em;
+    display: flex
+;
+    align-items: center;
+        margin-top: 20px;
+}
+
+.bullet-heading::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #273645;
+  font-size: 1.2em; /* Slightly larger bullet for visibility */
+  line-height: 44px; /* Match the line-height of the text */
+  display: flex;
+  align-items: center; /* Center the bullet vertically */
+  height: 44px; /* Match the line-height to ensure vertical centering */
+}
+.check-now-link {
+  font-family: "Poppins",sans-serif;
+
+  color: #007BFF;
+  font-weight: 500;
+  text-decoration: underline;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+.faq-heading {
+  margin-bottom: 50px; /* or whatever spacing you want */
+}
+/* Responsive */
+
+@media (min-width: 1148px) and (max-width: 1375px) {
+  .service-buttons {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 100px;
+    width: 100%;
+}
+  
+  .service-buttons .common-button {
+    width: 100%;
+    
+  }
+  
+}
+@media (min-width: 1150px) and (max-width: 1480px) {
+  .service-page-content{
+    width: 76vh;
+}
+  .service-page-wrapper {
+    display: flex;
+    padding: 80px 100px;
+    gap: 100px;
+}
+  
+}
+
+@media (min-width: 1024px) and (max-width: 1147px) {
+  .service-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px; /* spacing between buttons */
+  }
+
+  .call-btn-service,
+  .appt-btn-service {
+    height: auto; /* remove unnecessary fixed height */
+    padding: 12px 20px;
+    font-size: 18px;
+    width: 100%; /* full width of container */
+    max-width: 400px; /* optional: keep a max width for nice layout */
+    margin: 0 auto; /* center buttons */
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 1024px) {
+  .service-page-wrapper {
+    flex-direction: column;
+    padding: 5px 12px;
+    gap: 40px;
+  }
+
+  .service-page-sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0;
+  }
+
+  .service-page-sidebar ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .service-page-sidebar li {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .appt-btn-service {
+    font-size: 15px;
+    padding: 1px 10px;
+  }
+
+  .call-btn-service {
+    font-size: 15px;
+    padding: 1px 10px;
+  }
+
+  .service-page-content > .heading-main {
+    font-family: "Cormorant", serif;
+    font-size: 2.3rem;
+    /* font-size: 31px; */
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+  .css-1xc3v61-indicatorContainer {
+    font-size: 15px !important;
+  }
+  .service-page-content h2 {
+    margin-top: 25px;
+    font-size: 28px;
+    line-height: 50px;
+  }
+
+  .service-page-subheading {
+    font-size: 28px;
+  }
+
+  .service-page-content p,
+  .bullet-paragraph {
+            font-size: 16px;
+        line-height: 33px;
+        margin-top: 18px;
+        padding-right: 5px;
+  }
+
+  .service-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .bullet-heading {
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-page-content h2 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+}
+
+/* .service-page-wrapper {
+    display: flex;
+    padding: 80px 100px;
+    gap: 100px;
+  }
+  
+  .service-page-sidebar {
+    background-color: #52606F;
+    padding: 40px 0;
+    width: 386px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 40px;
+  }
+  
+  .service-page-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 58px;
+    color: white;
+    padding: 0 55px;
+    margin-bottom: 16px;
+  }
+  
+  .service-page-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .service-page-sidebar li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 58px;
+    color: white;
+    padding: 6px 55px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .service-page-sidebar li:hover,
+  .service-page-sidebar li.active {
+    background-color: #626e7c;
+  }
+  
+  .service-page-content {
+    flex: 1;
+  }
+  
+  .service-page-content h2 {
+    font-family: 'Shippori Mincho B1', sans-serif;
+    font-size: 65px;
+    line-height: 80px;
+    color: #313942;
+    margin-bottom: 20px;
+  }
+  
+  .service-page-subheading {
+    font-family: 'Shippori Mincho B1', sans-serif;
+    font-size: 44px;
+    color: #475666;
+  }
+  
+  .service-page-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    line-height: 45px;
+    color: #7A7979;
+    white-space: pre-line;
+    padding-right: 55px;
+  }
+  
+  .service-buttons {
+    display: flex;
+    width: 100%;
+    gap: 100px;
+    margin-top: 60px;
+  }
+  
+  .call-btn-service,
+  .appt-btn-service {
+    flex: 1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 11px 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .call-btn-service {
+    background-color: #5d6d7f;
+  }
+  
+  .appt-btn-service {
+    background-color: #273645;
+  }
+  
+
+  @media (max-width: 1024px) {
+    .service-page-wrapper {
+      flex-direction: column;
+      padding: 60px 40px;
+      gap: 40px;
+    }
+  
+    .service-page-sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      padding: 0;
+    }
+  
+    .service-page-sidebar ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .service-page-sidebar li {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-page-content h2 {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  
+    .service-page-subheading {
+      font-size: 28px;
+    }
+  
+    .service-page-content p {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  
+    .service-buttons {
+      flex-direction: column;
+      gap: 10px;
+  }
+  }
+   */

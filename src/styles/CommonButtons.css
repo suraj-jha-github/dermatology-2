@@ -1,0 +1,52 @@
+.common-button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding: 1.3rem 3.125rem;
+  font-size: 0.875rem;
+  color: white;
+  background-color: #505E6D;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  line-height: 1.5;
+  width:23rem;
+}
+
+.common-button:hover {
+  background-color: #1f2225;
+}
+
+/* Secondary button style (for call buttons) */
+.common-button-secondary {
+  background-color: #818992;
+}
+
+.common-button-secondary:hover {
+  background-color: #1f2225;
+}
+
+/* Responsive styles */
+
+@media (min-width: 1025px) and (max-width: 1211px) {
+
+  .common-button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .common-button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
+  }
+} 

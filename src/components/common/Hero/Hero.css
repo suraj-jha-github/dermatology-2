@@ -1,0 +1,231 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 550px; /* Default height for non-homepage hero sections */
+  overflow: hidden;
+}
+
+.hero-fullscreen {
+  height: 100vh; /* Full-screen height for homepage hero */
+}
+
+.hero-image,
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translateY(-50%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+}
+
+.hero-text .hero-subheading {
+  font-family: "Poppins", sans-serif; /* Different font for contrast */
+  font-weight: 500;
+  font-size: 24px; /* Smaller than heading */
+  line-height: 36px;
+  color: #ffffff;
+  margin-bottom: 10px; /* Space between "Board Certified" and "Dermatology" */
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideUpFadeIn 1s ease-out forwards;
+}
+.hero-contact .hero-image {
+  object-position: center 10%; /* Moves the image down slightly */
+}
+
+.hero-text .hero-heading {
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+  font-size: 80px;
+  margin-top: 0; /* Remove original margin-top */
+}
+
+.book-now {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 15px;
+  width: 187px;
+  height: 63px;
+  background-color: #505e6d;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;    letter-spacing: 3px;
+}
+
+.hero-text .book-now {
+  margin-top: 40px;
+}
+
+@keyframes slideUpFadeIn {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.hero-text .hero-subheading,
+.hero-text .hero-heading,
+.hero-text .book-now {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideUpFadeIn 1s ease-out forwards;
+}
+
+.hero-text .hero-heading {
+  animation-delay: 0.2s; /* Slight delay after subheading */
+}
+
+.hero-text .book-now {
+  animation-delay: 0.5s;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 2050px) {
+  .hero-text {
+    margin-left: 396px;
+  }
+}
+
+@media (max-width: 1822px) {
+  .hero-text {
+    margin-left: 270px;
+  }
+}
+
+@media (max-width: 1708px) {
+  .hero-text {
+    margin-left: 216px;
+  }
+}
+
+@media (max-width: 1561px) {
+  .hero-text {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 1367px) {
+  .hero-text {
+    margin-left: 35px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-text {
+    margin-left: -49px;
+  }
+
+  .hero-text .hero-subheading {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .hero-text .hero-heading {
+    font-size: 72px;
+    line-height: 80px;
+  }
+
+  .book-now {
+    width: 150px;
+    height: 60px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    height: auto;
+    aspect-ratio: 16 / 9; /* Default for non-homepage hero */
+  }
+
+  .hero-fullscreen {
+    height: 100vh; /* Maintain full-screen for homepage */
+    aspect-ratio: none;
+  }
+
+  .hero-text {
+    margin-left: -10px;
+    margin-top: -19px;
+  }
+
+  .hero-text .hero-subheading {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .hero-text .hero-heading {
+    font-size: 56px;
+    line-height: 62px;
+  }
+
+  .book-now {
+    width: 160px;
+    height: 55px;
+    font-weight: 600;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .hero-fullscreen {
+    height: 80vh; /* Adjusted height for small screens */
+    aspect-ratio: none;
+  }
+
+  .hero-video {
+    height: 80vh; /* Ensure video height is 80vh for small screens */
+  }
+
+  .hero-text {
+    margin-left: -40px;
+  }
+
+  .hero-text .hero-subheading {
+    display: none; /* Hide "Board Certified" */
+  }
+
+  .hero-text .hero-heading {
+    font-size: 42px;
+    line-height: 48px;
+    display: none; /* Hide "Dermatology" (or heading) */
+  }
+
+  .book-now {
+    display: none; /* Hide "Book Now" button */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text {
+    margin-left: -50px;
+    align-items: flex-start;
+  }
+
+  .hero-text .hero-heading {
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 0;
+    display: none; /* Ensure heading is hidden */
+  }
+}
