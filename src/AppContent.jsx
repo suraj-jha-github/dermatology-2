@@ -15,6 +15,7 @@ import BlogDetail from "./pages/BlogDetail";
 import ChatWidget from "./components/common/ChatWidget";
 
 
+
 const AppContent = ({ isMenuOpen, toggleMenu }) => {
    const [isChatOpen, setIsChatOpen] = useState(false);
   const location = useLocation();

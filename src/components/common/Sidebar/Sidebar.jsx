@@ -21,17 +21,18 @@ const Sidebar = ({ isMenuOpen, toggleMenu }) => {
           <ul>
             <li><NavLink to="/" end onClick={toggleMenu}>HOME</NavLink></li>
             <li><NavLink to="/about-us/alicia-natalizio-fnp-bc" onClick={toggleMenu}>ABOUT US</NavLink></li>
-            <li><NavLink to="/services/cosmetic-dermatology" onClick={toggleMenu}>COSMETIC DERMATOLOGY</NavLink></li>
+            {/* <li><NavLink to="/services/cosmetic-dermatology" onClick={toggleMenu}>COSMETIC DERMATOLOGY</NavLink></li>
             <li><NavLink to="/services/skin-rejuvenation" onClick={toggleMenu}>SKIN REJUVENATION</NavLink></li>
             <li><NavLink to="/services/injectables" onClick={toggleMenu}>INJECTABLES</NavLink></li>
-            <li><NavLink to="/services/acne-treatment" onClick={toggleMenu}>ACNE TREATMENT</NavLink></li>
+            <li><NavLink to="/services/acne-treatment" onClick={toggleMenu}>ACNE TREATMENT</NavLink></li> */}
+            <li><NavLink to="/pricing" onClick={toggleMenu}>PRICING</NavLink></li>
+            <li><NavLink to="/services/acne-treatment" onClick={toggleMenu}>SERVICES</NavLink></li>
             <li><NavLink to="/patient-resources" onClick={toggleMenu}>PATIENT RESOURCES</NavLink></li>
             <li><NavLink to="/pay-bill" onClick={toggleMenu}>PAY BILL</NavLink></li>
             <li><NavLink to="/before-&-after" onClick={toggleMenu}>BEFORE & AFTER</NavLink></li>
             <li><NavLink to="/blogs" onClick={toggleMenu}>BLOGS</NavLink></li>
           </ul>
         </nav>
-
         <div className="sidebar-footer">
           <NavLink to="/contact-us" onClick={toggleMenu}>
             <button className="sidebar-contact-btn">CONTACT US</button>

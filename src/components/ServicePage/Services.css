@@ -1,5 +1,6 @@
 .service-page-wrapper {
   display: flex;
+  align-items: flex-start;
   padding: 80px 100px;
   gap: 100px;
 }
@@ -8,9 +9,6 @@
   background-color: #52606f;
   padding: 40px 0;
   width: 386px;
-  height: 330px;
-  display: flex;
-  flex-direction: column;
   position: sticky;
   top: 40px;
 }

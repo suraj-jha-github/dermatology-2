@@ -53,19 +53,30 @@ const Services = ({ selectedTab, setSelectedTab }) => {
     }
   }, [isMobile, selectedTab, tabs, setSelectedTab]);
 
+  // Define Dermatology sub-services for dropdown
+  const dermatologySubServices = [
+    { label: 'Skin Cancer Screenings', path: '/services/skin-cancer-screenings' },
+    { label: 'Excision Procedures', path: '/services/excision-procedures' },
+    { label: 'Mole & Skin Tag Removal', path: '/services/mole-skin-tag-removal' },
+    { label: 'Cryotherapy', path: '/services/cryotherapy' },
+    { label: 'Eczema & Psoriasis Care', path: '/services/eczema-psoriasis-care' },
+    { label: 'Rosacea Treatment', path: '/services/rosacea-treatment' },
+    { label: 'Vitiligo Management', path: '/services/vitiligo-management' },
+    { label: 'Hair & Scalp Care', path: '/services/hair-scalp-care' },
+    { label: 'Nail Care', path: '/services/nail-care' },
+  ];
+  const [dermOpen, setDermOpen] = useState(false);
   return (
     <div className="service-page-wrapper">
-      <aside className="service-page-sidebar">
+      <aside className="service-page-sidebar transition-all duration-300">
         {isMobile ? (
           <div className="service-dropdown-container">
-            {/* Removed "Services" title on mobile */}
             <Select
               isSearchable={false}
               value={
                 selectOptions.find((opt) => opt.value === selectedTab) || null
               }
               onChange={(opt) => {
-                console.log("Dropdown selected:", opt.value);
                 setSelectedTab(opt.value);
               }}
               options={selectOptions}
@@ -135,24 +146,48 @@ const Services = ({ selectedTab, setSelectedTab }) => {
           </div>
         ) : (
           <ul>
-            {tabs.map((tab, index) =>
-              index === 0 ? (
-                <h3 key={tab} className="service-page-title">
-                  {tab}
-                </h3>
-              ) : (
-                <li
-                  key={tab}
-                  className={selectedTab === tab ? "active" : ""}
-                  onClick={() => {
-                    console.log("Sidebar selected:", tab);
-                    setSelectedTab(tab);
-                  }}
-                >
-                  {tab}
-                </li>
-              )
-            )}
+            {tabs.map((tab, index) => {
+              if (tab === 'Dermatology') {
+                return (
+                  <li key={tab} style={{ position: 'relative' }}>
+                    <div
+                      className="pl-0 flex items-center cursor-pointer text-white font-normal select-none"
+                      onClick={() => setDermOpen((open) => !open)}
+                    >
+                      {tab}
+                      <span className="ml-2 text-sm">{dermOpen ? '▼' : '▶'}</span>
+                    </div>
+                    {dermOpen && (
+                      <ul style={{ marginTop: 0, marginLeft: 0 }}>
+                        {dermatologySubServices.map((sub) => (
+                          <li key={sub.path} className="service-page-sidebar-li" style={{ listStyle: 'none' }}>
+                            <Link to={sub.path} style={{ color: 'inherit', textDecoration: 'none', display: 'block', width: '100%' }}>
+                              {sub.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                );
+              }
+              // Keep all other items unchanged
+              if (tab === 'Services' || tab === 'Acne Treatment' || tab === 'Injectables' || tab === 'Skin Rejuvenation') {
+                return index === 0 ? (
+                  <h3 key={tab} className="service-page-title">{tab}</h3>
+                ) : (
+                  <li
+                    key={tab}
+                    className={selectedTab === tab ? 'active' : ''}
+                    onClick={() => setSelectedTab(tab)}
+                  >
+                    {tab}
+                  </li>
+                );
+              }
+              // Hide all other tabs from sidebar
+              return null;
+            })}
           </ul>
         )}
       </aside>

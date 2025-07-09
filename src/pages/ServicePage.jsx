@@ -5,21 +5,20 @@ import Footer from "../components/common/Footer/Footer";
 import ImageAssets from "../components/common/ImageAssets";
 import Services from "../components/ServicePage/Services";
 import Breadcrumbs from "../components/common/BreadCrumbs/BreadCrumbs";
+import serviceData from '../data/serviceData';
 
-// Define slug-to-title mapping
-const serviceSlugMap = {
-  "cosmetic-dermatology": "Cosmetic Dermatology",
-  "skin-rejuvenation": "Skin Rejuvenation",
-  injectables: "Injectables",
-  "acne-treatment": "Acne Treatment",
-};
-
+// Define slug-to-title mapping dynamically from serviceData, replacing ' & ' and spaces with dashes
+const serviceSlugMap = Object.fromEntries(
+  Object.keys(serviceData).map(
+    key => [key.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-'), key]
+  )
+);
 // Reverse it: title -> slug
 const reverseServiceSlugMap = Object.fromEntries(
   Object.entries(serviceSlugMap).map(([slug, label]) => [label, slug])
 );
 
-const defaultTab = "Cosmetic Dermatology";
+const defaultTab = "Dermatology";
 
 const ServicePage = () => {
   const { serviceSlug } = useParams();
@@ -45,7 +44,7 @@ const ServicePage = () => {
   };
 
   const heroImages = {
-    "Cosmetic Dermatology": ImageAssets.service5,
+    "Dermatology": ImageAssets.service5,
     "Skin Rejuvenation": ImageAssets.service2,
     Injectables: ImageAssets.service3,
     "Acne Treatment": ImageAssets.service4,

@@ -5,7 +5,7 @@ const serviceData = {
     main: "We provide a range of medical and cosmetic dermatology services.",
     bullets: [],
   },
-  "Cosmetic Dermatology": {
+  "Dermatology": {
     main: "Cosmetic dermatology focuses on aesthetic treatments that improve the appearance of the skin without surgery. Unlike medical dermatology, which addresses health concerns like acne or eczema, cosmetic dermatology enhances your skin’s visual quality—reducing signs of aging, uneven pigmentation, and more. Our approach is patient-centric, safe, and tailored to your goals.",
     sections: [
       {
@@ -96,6 +96,47 @@ const serviceData = {
           {
             question: "Is there any downtime after treatment?",
             answer: "Most treatments have little to no downtime. Some may cause mild redness or swelling, which typically resolves within a few hours to days.",
+          },
+        ],
+      },
+    ],
+  },
+  "Skin Cancer Screenings": {
+    main: "Non-surgical treatments designed to refresh, enhance, and rejuvenate—personalized to highlight your natural beauty",
+    sections: [
+      {
+        heading: "Early Detection Saves Lives",
+        content: "Regular skin cancer screenings are vital for identifying suspicious moles or lesions before they become serious. At Dermatology & Skincare Arts, we provide thorough, full-body skin exams using advanced tools to detect skin cancer at its earliest, most treatable stages.",
+      },
+      {
+        heading: "Who Needs Screening?",
+        content: "Skin cancer screenings are recommended for anyone who:",
+        items: [
+          { title: "Has a history of sun exposure or tanning", content: "", hasBullet: true },
+          { title: "Notices changing moles or new skin growths", content: "", hasBullet: true },
+          { title: "Has a personal or family history of skin cancer", content: "", hasBullet: true },
+          { title: "Has fair skin, freckles, or numerous moles", content: "", hasBullet: true },
+        ],
+      },
+      {
+        heading: "",
+        content: "Our team will examine your skin from head to toe and track any changes over time.",
+      },
+      {
+        heading: "What to Expect",
+        content: "The screening is quick, non-invasive, and completely painless. If any concerning lesions are found, we may recommend a biopsy or close monitoring.",
+      },
+      {
+        heading: "",
+        content: "\ud83d\udccd Schedule your annual skin check in Parsippany, NJ for peace of mind and proactive care.",
+      },
+      {
+        heading: "Non-Surgical Cosmetic Treatments",
+        items: [
+          {
+            title: "Refresh. Enhance. Rejuvenate.",
+            content: "Rediscover your natural beauty with non-surgical treatments designed to revitalize your skin and boost confidence—without downtime. At Dermatology & Skincare Arts, every treatment plan is customized to your skin’s unique needs.",
+            hasBullet: false,
           },
         ],
       },
@@ -306,6 +347,37 @@ const serviceData = {
       },
     ],
   },
+  "Excision Procedures": {
+    main: "Removal of skin cancers, cysts, and abnormal growths under local anesthesia.",
+    sections: [
+      {
+        heading: "What Can Be Removed with Excision?",
+        content: "Excision is commonly used to treat:",
+        items: [
+          { title: "Skin cancers (e.g., basal cell carcinoma, squamous cell carcinoma, melanoma)", content: "", hasBullet: true },
+          { title: "Cysts (epidermoid or sebaceous)", content: "", hasBullet: true },
+          { title: "Lipomas (fatty tissue growths)", content: "", hasBullet: true },
+          { title: "Benign or precancerous lesions that are changing or symptomatic", content: "", hasBullet: true },
+          { title: "Any abnormal growth causing discomfort, cosmetic concern, or diagnostic uncertainty", content: "", hasBullet: true },
+        ],
+      },
+      {
+        heading: "Why Excision?",
+        content: "Excision provides several benefits:",
+        items: [
+          { title: "Complete removal of the lesion or growth", content: "", hasBullet: true },
+          { title: "Allows for laboratory analysis (biopsy) to confirm diagnosis", content: "", hasBullet: true },
+          { title: "Helps prevent recurrence or progression of disease", content: "", hasBullet: true },
+          { title: "Offers curative treatment for many early skin cancers", content: "", hasBullet: true },
+          { title: "Often results in a clean, cosmetically acceptable closure", content: "", hasBullet: true },
+        ],
+      },
+      {
+        heading: "What to Expect",
+        content: "The area is numbed with a local anesthetic. The lesion is then surgically removed, and the wound is closed with sutures. Most patients return to normal activity shortly after, with minimal downtime. Post-procedure, you’ll receive care instructions to support proper healing and minimize scarring.",
+      },
+    ],
+  },
   "Acne Treatment": {
     main: "Say goodbye to breakouts with our personalized acne solutions. From blackheads and pimples to stubborn acne scars, our expert dermatologists provide effective, skin-type-specific treatments that heal, restore, and reveal clear, healthy skin.",
     sections: [
@@ -406,6 +478,225 @@ const serviceData = {
             answer: "Our goal is long-term acne management. We provide lifestyle and skincare support to help prevent future breakouts.",
           },
         ],
+      },
+    ],
+  },
+  "Mole & Skin Tag Removal": {
+    main: "Safe removal for cosmetic or medical purposes.",
+    sections: [
+      {
+        heading: "Mole & Lesion Evaluation",
+        content: "Why Early Detection Matters\n\nSkin cancer is one of the most common—but also one of the most treatable—forms of cancer when caught early. That’s why monitoring your skin for new or changing moles and lesions is so important. Early evaluation and removal can be life-saving and prevent more extensive treatment in the future.",
+      },
+      {
+        heading: "What Are Suspicious Moles & Lesions?",
+        content: "Moles or skin lesions that change in size, color, shape, or texture may be cause for concern. Warning signs include:",
+        items: [
+          { title: "Asymmetry (one half doesn’t match the other)", content: "", hasBullet: true },
+          { title: "Irregular borders", content: "", hasBullet: true },
+          { title: "Multiple colors or very dark color", content: "", hasBullet: true },
+          { title: "Diameter larger than 6mm (about the size of a pencil eraser)", content: "", hasBullet: true },
+          { title: "Evolving shape, size, or symptoms (itching, bleeding)", content: "", hasBullet: true },
+        ],
+      },
+      {
+        heading: "Who Is at Risk?",
+        content: "Skin cancer can affect anyone, regardless of skin tone or age. You may be at higher risk if you:",
+        items: [
+          { title: "Have a family or personal history of skin cancer", content: "", hasBullet: true },
+          { title: "Spend a lot of time in the sun or use tanning beds", content: "", hasBullet: true },
+          { title: "Have many moles or atypical moles", content: "", hasBullet: true },
+          { title: "Have fair skin, light eyes, or freckles", content: "", hasBullet: true },
+        ],
+      },
+      {
+        heading: "Why Early Removal?",
+        content: "When a mole or lesion appears suspicious, prompt removal is recommended to:",
+        items: [
+          { title: "Prevent the spread of skin cancer", content: "", hasBullet: true },
+          { title: "Confirm diagnosis through a biopsy", content: "", hasBullet: true },
+          { title: "Reduce the need for more aggressive treatments later", content: "", hasBullet: true },
+          { title: "Achieve better cosmetic outcomes", content: "", hasBullet: true },
+        ],
+      },
+      {
+        heading: "",
+        content: "Even non-cancerous lesions can be removed if they cause irritation, discomfort, or cosmetic concerns.",
+      },
+    ],
+  },
+  "Cryotherapy": {
+    main: "Cryotherapy is a commonly used dermatological treatment that involves freezing abnormal skin tissues. It is a safe, effective, and minimally invasive procedure. Many patients opt for cryotherapy because it offers quick treatment time and minimal recovery, making it ideal for addressing a variety of skin lesions without surgery.",
+    sections: [
+      {
+        heading: "What is Cryotherapy?",
+        content: "Cryotherapy (also called cryosurgery) is a procedure that uses extreme cold—usually liquid nitrogen—to freeze and destroy abnormal skin cells. It is commonly used to treat warts, actinic keratosis (precancerous sun-damaged skin), skin tags, seborrheic keratoses, and other benign lesions. When applied to the skin, the cold causes the abnormal tissue to blister and eventually fall off, allowing healthy skin to replace it.",
+      },
+      {
+        heading: "Who is a candidate for Cryotherapy?",
+        content: "Cryotherapy is suitable for most people, including children and adults. It is especially beneficial for those who want a quick, in-office treatment for specific skin growths or lesions. Individuals with warts, sun-damaged skin, or other superficial benign growths are ideal candidates. However, people with certain circulation disorders or very dark skin types may need alternative options due to a higher risk of pigmentation changes.",
+      },
+      {
+        heading: "What conditions can Cryotherapy treat?",
+        content: "Cryotherapy is used to treat a wide range of conditions, including:",
+        items: [
+          { title: "Common and plantar warts", content: "", hasBullet: true },
+          { title: "Actinic keratosis (precancerous sun damage)", content: "", hasBullet: true },
+          { title: "Skin tags", content: "", hasBullet: true },
+          { title: "Seborrheic keratosis (non-cancerous skin growths)", content: "", hasBullet: true },
+          { title: "Molluscum contagiosum", content: "", hasBullet: true },
+          { title: "Some superficial basal cell carcinomas (when surgery is not suitable)", content: "", hasBullet: true },
+        ],
+      },
+      {
+        heading: "Why treat early?",
+        content: "Early cryotherapy can prevent lesions like actinic keratosis from developing into skin cancer. Warts and other benign growths can spread or worsen over time if not treated promptly. Early treatment minimizes discomfort, reduces the risk of scarring, and limits the chances of transmission (in the case of viral conditions like warts). Quick intervention also offers better cosmetic results and faster healing.",
+      },
+    ],
+  },
+  "Rosacea Treatment": {
+    main: "Rosacea is a chronic skin condition that primarily affects the face, leading to redness, visible blood vessels, and sometimes acne-like bumps. Without treatment, symptoms can worsen over time. Customized care can reduce facial redness, control flare-ups, and improve overall skin appearance and comfort.",
+    sections: [
+      {
+        heading: "What is Rosacea Treatment?",
+        content: "Rosacea treatment focuses on calming inflammation, reducing visible redness, and managing symptoms like flushing and breakouts. Because rosacea varies in type and severity, treatment plans are tailored to each patient. Options may include topical medications, oral therapies, and laser treatments to address both cosmetic and physical discomfort.",
+      },
+      {
+        heading: "Who should seek treatment?",
+        content: "Anyone experiencing persistent facial redness, frequent flushing, or acne-like bumps should consult a dermatologist. Rosacea often begins between the ages of 30 and 50 and is more common in fair-skinned individuals. However, people of all skin types can be affected. Early treatment is especially important for those with a family history or worsening symptoms.",
+      },
+      {
+        heading: "What does Rosacea Treatment address?",
+        content: "Comprehensive care targets symptoms such as:",
+        items: [
+          { title: "Persistent redness across the cheeks, nose, chin, or forehead", content: "", hasBullet: true },
+          { title: "Visible blood vessels (telangiectasia)", content: "", hasBullet: true },
+          { title: "Pimple-like bumps or pustules", content: "", hasBullet: true },
+          { title: "Facial swelling or sensitivity", content: "", hasBullet: true },
+          { title: "Eye irritation in cases of ocular rosacea", content: "", hasBullet: true },
+          { title: "Skin thickening (especially on the nose) in advanced stages", content: "", hasBullet: true },
+        ],
+      },
+      {
+        heading: "Why treat early?",
+        content: "Early treatment can prevent rosacea from progressing to more severe forms. Without care, symptoms may become more noticeable and harder to control. Treating early also helps reduce embarrassment or self-consciousness, supports clearer skin, and improves quality of life.",
+      },
+    ],
+  },
+  "Eczema & Psoriasis Care": {
+    main: "Chronic skin conditions like eczema and psoriasis can significantly impact daily life, causing discomfort, irritation, and self-consciousness. Expert care offers relief from symptoms and long-term management strategies to reduce flare-ups and improve skin health. Personalized treatment helps patients regain comfort and confidence.",
+    sections: [
+      {
+        heading: "What is Eczema & Psoriasis Care?",
+        content: "Eczema (atopic dermatitis) and psoriasis are chronic inflammatory skin conditions characterized by itching, redness, flaking, and in some cases, cracked or thickened skin. Treatment focuses on relieving symptoms, reducing inflammation, and preventing future flare-ups. Management may involve medicated creams, oral treatments, light therapy, and lifestyle adjustments tailored to each individual’s condition.",
+      },
+      {
+        heading: "Who needs this care?",
+        content: "Anyone experiencing ongoing skin irritation, dryness, or flare-ups may benefit from eczema and psoriasis care. These conditions affect both children and adults and often require long-term management. Those with a family history of skin conditions, allergies, or autoimmune disorders may be at greater risk.",
+      },
+      {
+        heading: "What does it treat?",
+        content: "Specialized eczema and psoriasis care addresses:",
+        items: [
+          { title: "Chronic itching, redness, and dryness", content: "", hasBullet: true },
+          { title: "Flaky, thickened, or scaly skin", content: "", hasBullet: true },
+          { title: "Cracked or painful skin lesions", content: "", hasBullet: true },
+          { title: "Skin sensitivity due to environmental or stress triggers", content: "", hasBullet: true },
+          { title: "Sleep disturbances and emotional effects caused by skin discomfort", content: "", hasBullet: true },
+        ],
+      },
+      {
+        heading: "Why treat early?",
+        content: "Early diagnosis and treatment can control symptoms before they worsen. Delayed care can lead to skin infections, worsening inflammation, and reduced quality of life. Managing eczema and psoriasis early helps break the cycle of flare-ups, reduces the need for stronger medications, and prevents complications such as skin thickening or pigment changes.",
+      },
+    ],
+  },
+  "Vitiligo Management": {
+    main: "Vitiligo is a condition that causes loss of skin pigment, resulting in white patches on various parts of the body. While not harmful to physical health, it can significantly affect self-image and confidence. Expert care offers personalized treatment options to manage pigment loss, even skin tone, and improve overall appearance.",
+    sections: [
+      {
+        heading: "What is Vitiligo Management?",
+        content: "Anyone noticing white or light-colored patches on their skin—especially on the face, hands, or joints—should consult a dermatologist. Vitiligo can affect all skin types, though it may be more visible on darker skin tones. It often begins before age 30, but it can appear at any age. Early evaluation is recommended for best results.",
+      },
+      {
+        heading: "Who should seek treatment?",
+        content: "Anyone noticing white or light-colored patches on their skin—especially on the face, hands, or joints—should consult a dermatologist. Vitiligo can affect all skin types, though it may be more visible on darker skin tones. It often begins before age 30, but it can appear at any age. Early evaluation is recommended for best results.",
+      },
+      {
+        heading: "What does Vitiligo Management address?",
+        content: "Treatment plans help with:",
+        items: [
+          { title: "Loss of pigment on the face, hands, arms, feet, and genitals", content: "", hasBullet: true },
+          { title: "Spreading white patches on the skin", content: "", hasBullet: true },
+          { title: "Emotional distress or lowered self-confidence", content: "", hasBullet: true },
+          { title: "Uneven skin tone that affects appearance", content: "", hasBullet: true },
+          { title: "Prevention of further depigmentation", content: "", hasBullet: true },
+        ],
+      },
+      {
+        heading: "Why treat early?",
+        content: "Early management can slow or stop the spread of pigment loss. Some therapies are more effective when started early in the condition’s progression. Treating sooner also offers emotional benefits—reducing social anxiety, improving self-image, and preventing long-term psychological impact.",
+      },
+    ],
+  },
+  "Hair & Scalp Care": {
+    main: "Healthy hair begins with a healthy scalp. Hair and scalp conditions like hair thinning, dandruff, and infections can affect not only appearance but also self-esteem. Personalized dermatological care helps diagnose the root cause and provide effective treatments to restore scalp health and improve hair quality.",
+    sections: [
+      {
+        heading: "What is Hair & Scalp Care?",
+        content: "Hair and scalp care involves medical evaluation and treatment of conditions affecting hair growth and scalp health. Whether dealing with hair loss, flaking, or irritation, the goal is to address underlying causes and support healthy, resilient hair. Treatments range from topical solutions to advanced procedures for lasting results.",
+      },
+      {
+        heading: "Who should seek treatment?",
+        content: "Anyone experiencing unusual hair loss, thinning, itching, scaling, or persistent scalp irritation should consult a dermatologist. Hair and scalp issues can affect both men and women of all ages, and early evaluation is important to prevent progression and optimize outcomes.",
+      },
+      {
+        heading: "What does it treat?",
+        content: "Hair & Scalp Care addresses a range of conditions including:",
+        items: [
+          { title: "Hair thinning or patterned baldness (androgenetic alopecia)", content: "", hasBullet: true },
+          { title: "Sudden hair shedding (telogen effluvium)", content: "", hasBullet: true },
+          { title: "Dandruff and seborrheic dermatitis", content: "", hasBullet: true },
+          { title: "Scalp psoriasis or eczema", content: "", hasBullet: true },
+          { title: "Fungal and bacterial scalp infections", content: "", hasBullet: true },
+          { title: "Scarring alopecia", content: "", hasBullet: true },
+          { title: "Itchy, flaky, or irritated scalp", content: "", hasBullet: true },
+        ],
+      },
+      {
+        heading: "Why treat early?",
+        content: "Early diagnosis allows for more effective treatment, especially with conditions like alopecia or scalp infections. Delaying care can result in permanent hair loss, scarring, or ongoing discomfort. Timely treatment not only improves physical symptoms but also boosts self-confidence and emotional well-being.",
+      },
+    ],
+  },
+  "Nail Care": {
+    main: "Nail problems are more than cosmetic—they can signal underlying health issues and cause pain or discomfort. Dermatological nail care helps treat common conditions like fungal infections, ingrown nails, and nail damage, restoring both appearance and function.",
+    sections: [
+      {
+        heading: "What is Nail Care?",
+        content: "Nail care in dermatology involves the diagnosis and treatment of conditions affecting the fingernails and toenails. From infections and injuries to structural abnormalities, nail concerns often reflect deeper skin or systemic issues. Proper treatment helps restore nail health, improve comfort, and prevent complications.",
+      },
+      {
+        heading: "Who should seek treatment?",
+        content: "Anyone with persistent nail changes—such as discoloration, thickening, splitting, pain, or changes in shape—should consult a dermatologist. Nail issues can affect people of all ages and may be linked to infections, trauma, or chronic skin conditions. Early evaluation can provide relief and address underlying causes.",
+      },
+      {
+        heading: "What does it treat?",
+        content: "Nail Care addresses a variety of nail and surrounding skin conditions, including:",
+        items: [
+          { title: "Fungal nail infections (onychomycosis)", content: "", hasBullet: true },
+          { title: "Ingrown toenails", content: "", hasBullet: true },
+          { title: "Nail psoriasis", content: "", hasBullet: true },
+          { title: "Nail damage due to trauma or biting", content: "", hasBullet: true },
+          { title: "Discoloration or thickening of nails", content: "", hasBullet: true },
+          { title: "Nail ridges or pitting", content: "", hasBullet: true },
+          { title: "Bacterial infections (paronychia)", content: "", hasBullet: true },
+          { title: "Nail changes related to systemic illnesses", content: "", hasBullet: true },
+        ],
+      },
+      {
+        heading: "Why treat early?",
+        content: "Nail disorders can worsen over time, leading to pain, permanent damage, or spreading infections. Early treatment improves healing, prevents recurrence, and ensures nails regain their healthy appearance and function. Proper care also supports hygiene and overall nail aesthetics, which can impact both health and confidence.",
       },
     ],
   },
