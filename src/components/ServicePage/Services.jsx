@@ -187,8 +187,8 @@ const Services = ({ selectedTab, setSelectedTab }) => {
                   </li>
                 );
               }
-              // Only show Hair Restoration and Injectables as main sidebar items
-              if (tab === 'Hair Restoration' || tab === 'Injectables') {
+              // Only show Hair Restoration, Injectables, and Skin Correcting as main sidebar items
+              if (tab === 'Hair Restoration' || tab === 'Injectables' || tab === 'Skin Correcting') {
                 return (
                   <li
                     key={tab}

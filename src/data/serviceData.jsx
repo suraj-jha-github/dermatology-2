@@ -296,6 +296,86 @@ const serviceData = {
       },
     ],
   },
+  "Skin Correcting": {
+    main: "Skin correcting therapies aim to restore smoothness, clarity, and radiance by addressing underlying skin concerns like acne scars, fine lines, and uneven tone. Using advanced dermatological techniques, these treatments stimulate skin regeneration and boost collagen for healthier, rejuvenated skin.",
+    sections: [
+      {
+        heading: "What is Skin Correcting?",
+        content: "Skin correcting in dermatology focuses on enhancing skin clarity, texture, and tone by targeting underlying conditions like acne scars, pigmentation, and early signs of aging. Through specialized treatments, it promotes skin regeneration, stimulates collagen production, and restores a healthy, radiant appearance.",
+      },
+      {
+        heading: "What does it treat?",
+        content: "Skin correcting addresses a wide range of skin concerns, including:",
+        items: [
+          { title: "Acne scars and blemishes", content: "", hasBullet: true },
+          { title: "Fine lines and wrinkles", content: "", hasBullet: true },
+          { title: "Uneven skin tone and texture", content: "", hasBullet: true },
+          { title: "Hyperpigmentation and melasma", content: "", hasBullet: true },
+          { title: "Sun damage and age spots", content: "", hasBullet: true },
+          { title: "Enlarged pores", content: "", hasBullet: true },
+          { title: "Dull or tired-looking skin", content: "", hasBullet: true },
+        ],
+      },
+      {
+        heading: "Why treat early?",
+        content: "Early intervention can prevent worsening of scars or pigmentation and significantly improve skin health and appearance. Skin correcting not only enhances aesthetic confidence but also supports long-term skin wellness by encouraging collagen renewal and cell turnover.",
+      },
+      {
+        heading: "Popular Skin Correcting Treatments",
+        content: "",
+        items: [
+          {
+            title: "Platelet Rich Plasma (PRP) :",
+            content: "Enhance microneedling results by adding PRP. It boosts collagen production, reduces fine lines, and promotes younger, more vibrant skin with reduced recovery time.",
+            hasBullet: true,
+          },
+          {
+            title: "Chemical Peels (TCA & Jessner) :",
+            content: "Ideal for treating active acne, scars, melasma, sun damage, fine lines, and uneven tone. These peels deeply exfoliate to renew skin texture and clarity.",
+            hasBullet: true,
+          },
+        ],
+      },
+      {
+        heading: "Why Choose Us for Skin Correcting?",
+        content: "",
+        items: [
+          {
+            title: "Expert Care :",
+            content: "Experienced dermatologists ensure safe, expert skin correcting treatments.",
+            hasBullet: true,
+          },
+          {
+            title: "Advanced Technology :",
+            content: "State-of-the-art skin correcting techniques and equipment.",
+            hasBullet: true,
+          },
+          {
+            title: "Personalized Plans :",
+            content: "Customized treatment plans tailored to your specific skin concerns and goals.",
+            hasBullet: true,
+          },
+        ],
+      },
+      {
+        heading: "FAQ's",
+        faqs: [
+          {
+            question: "How long does it take to see results?",
+            answer: "Results typically begin to show within 2-4 weeks, with continued improvement over several months as collagen production increases.",
+          },
+          {
+            question: "Is skin correcting treatment painful?",
+            answer: "Most treatments are minimally uncomfortable. We use numbing techniques to ensure your comfort during the procedure.",
+          },
+          {
+            question: "How many sessions will I need?",
+            answer: "Most patients require 3-6 sessions spaced 4-6 weeks apart for optimal results, depending on your specific skin concerns.",
+          },
+        ],
+      },
+    ],
+  },
   "Excision Procedures": {
     main: "Removal of skin cancers, cysts, and abnormal growths under local anesthesia.",
     sections: [
