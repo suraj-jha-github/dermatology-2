@@ -13,27 +13,27 @@ const ServicesSection = () => {
 
   const services = [
     {
-      title: "SKIN REJUVENATION",
+      title: "SKIN CORRECTING",
       image: ImageAssets.skinreju,
-      link: "/services/skin-rejuvenation",
+      link: "/skin-correcting",
       description: "",
     },
     {
       title: "INJECTABLES",
       image: ImageAssets.injectables,
-      link: "/services/injectables",
+      link: "/injectables",
       description: "",
     },
     {
       title: "DERMATOLOGY",
       image: ImageAssets.cosmeticServices,
-      link: "/services/cosmetic-dermatology",
+      link: "/services/skin-cancer-screenings",
       description: "",
     },
     {
       title: "ACNE TREATMENT",
       image: ImageAssets.acneTreatment,
-      link: "/services/acne-treatment",
+      link: "/dermatology/acne-treatment",
       description: "",
     },
   ];
