@@ -57,6 +57,9 @@ const ServicePage = () => {
   "Rosacea Treatment": ImageAssets.rosaceaTreatment,
   "Hair & Scalp Care": ImageAssets.hairScalp,
   "Vitiligo Management": ImageAssets.vitiligoManagement,
+  "Hair Restoration":ImageAssets.hairRestoration,
+  "Skin Correcting":ImageAssets.skinCorrecting
+
   
 
   

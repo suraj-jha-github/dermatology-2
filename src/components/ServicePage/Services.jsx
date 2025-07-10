@@ -158,7 +158,7 @@ const Services = ({ selectedTab, setSelectedTab }) => {
                     >
                       {tab}
                       <span className="ml-20 text-base self-center flex items-center" style={{ marginTop: '2px' }}>
-                        <FaChevronRight style={{marginLeft: '60px', transform: dermOpen ? 'rotate(90deg)' : 'rotate(0deg)', transition: 'transform 0.2s', verticalAlign: 'middle' }} />
+                        <FaChevronDown style={{marginLeft: '60px', transform: dermOpen ? 'rotate(0deg)' : 'rotate(180deg)', transition: 'transform 0.2s', verticalAlign: 'middle' }} />
                       </span>
                     </div>
                     {dermOpen && (

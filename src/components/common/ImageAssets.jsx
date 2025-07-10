@@ -62,6 +62,9 @@ import hairScalp from '../../assets/images/hair-and-scalp.jpg';
 import vitiligoManagement from '../../assets/images/Vitiligo-Management.jpg';
 
 import eczemaPsoriasis from '../../assets/images/eczema-Psoriasis-Care.jpg';
+import skinCorrecting from '../../assets/images/skin-correcting.jpg';
+import hairRestoration from '../../assets/images/hair-restoration.jpg';
+
 
 
 
@@ -69,7 +72,7 @@ import eczemaPsoriasis from '../../assets/images/eczema-Psoriasis-Care.jpg';
 
 
 const ImageAssets={
-    logo,rejuvenatingImage,hamburgerIcon,drAlicaImage,drJulianaImage,drMikkilineni,crossIconSidebar,cosmeticServices,injectables,acneTreatment,Expert1,Expert2,aboutImage1,aboutJulianaCotler,aboutRadhaMikkilinen,officeImage1,officeImage2,officeImage3,officeImage4,careResourceImage,payBillImage,blogBanner,blog1,blog2,blog3,blog4,blog5,beforeAfterImg,beforeAfter1,beforeAfter2,contactImage,posterImage,beforeandafter,aboutTest,aboutOffice,service1,service2,service3,service4,skinreju,service5,blog2Hero,beforeAfterSR3,beforeAfterIn1,beforeAfterIn2,beforeAfterIn3,beforeAfterCd1,beforeAfterCd2,beforeAfterAt1,beforeAfterAt2,logoFooter,moleSkin,excisionProcedures,skinCancer,cryotherapy,nailCare,rosaceaTreatment,hairScalp,vitiligoManagement,eczemaPsoriasis
+    logo,rejuvenatingImage,hamburgerIcon,drAlicaImage,drJulianaImage,drMikkilineni,crossIconSidebar,cosmeticServices,injectables,acneTreatment,Expert1,Expert2,aboutImage1,aboutJulianaCotler,aboutRadhaMikkilinen,officeImage1,officeImage2,officeImage3,officeImage4,careResourceImage,payBillImage,blogBanner,blog1,blog2,blog3,blog4,blog5,beforeAfterImg,beforeAfter1,beforeAfter2,contactImage,posterImage,beforeandafter,aboutTest,aboutOffice,service1,service2,service3,service4,skinreju,service5,blog2Hero,beforeAfterSR3,beforeAfterIn1,beforeAfterIn2,beforeAfterIn3,beforeAfterCd1,beforeAfterCd2,beforeAfterAt1,beforeAfterAt2,logoFooter,moleSkin,excisionProcedures,skinCancer,cryotherapy,nailCare,rosaceaTreatment,hairScalp,vitiligoManagement,eczemaPsoriasis,hairRestoration,skinCorrecting
 };
 
 export default ImageAssets;
