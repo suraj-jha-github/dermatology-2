@@ -4,7 +4,7 @@ import Select, { components } from "react-select";
 import { FaChevronDown } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 import "./Services.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import serviceData from "../../data/serviceData";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
@@ -31,6 +31,7 @@ const Services = ({ selectedTab, setSelectedTab }) => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
+  const location = useLocation();
 
   // Debug: Log selectedTab
   console.log("Services - selectedTab:", selectedTab);
@@ -68,6 +69,13 @@ const Services = ({ selectedTab, setSelectedTab }) => {
     { label: 'Nail Care', path: '/dermatology/nail-care' },
   ];
   const [dermOpen, setDermOpen] = useState(false);
+  
+  // Auto-open dermatology dropdown if on a dermatology sub-service page
+  useEffect(() => {
+    if (location.pathname.startsWith('/dermatology/')) {
+      setDermOpen(true);
+    }
+  }, [location.pathname]);
   return (
     <div className="service-page-wrapper">
       <aside className="service-page-sidebar transition-all duration-300">
@@ -150,41 +158,47 @@ const Services = ({ selectedTab, setSelectedTab }) => {
           <ul>
             {tabs.map((tab, index) => {
               if (tab === 'Dermatology') {
+                // Check if we're on a dermatology sub-service page
+                const isOnDermatologyPage = location.pathname.startsWith('/dermatology/');
+                // Check if we're on the main dermatology page
+                const isOnMainDermatologyPage = selectedTab === 'Dermatology';
+                
                 return (
-                  <li key={tab} style={{ position: 'relative' }}>
-                    <div
-                      className="pl-0 flex items-center cursor-pointer text-white font-normal select-none"
-                      onClick={() => setDermOpen((open) => !open)}
-                    >
-                      {tab}
-                      <span className="ml-20 text-base self-center flex items-center" style={{ marginTop: '2px' }}>
-                        <FaChevronDown style={{marginLeft: '60px', transform: dermOpen ? 'rotate(0deg)' : 'rotate(180deg)', transition: 'transform 0.2s', verticalAlign: 'middle' }} />
-                      </span>
-                    </div>
-                    {dermOpen && (
-                      <ul style={{ marginTop: 0, marginLeft: 0 }}>
-                        {dermatologySubServices.map((sub) => (
-                          <li key={sub.path} className="service-page-sidebar-li" style={{ listStyle: 'none' }}>
-                            <Link
-                              to={sub.path}
-                              style={{
-                                color: 'inherit',
-                                textDecoration: 'none',
-                                display: 'block',
-                                width: '100%',
-                                whiteSpace: 'nowrap',
-                                overflow: 'hidden',
-                                textOverflow: 'ellipsis',
-                                maxWidth: '220px',
-                              }}
-                            >
-                              {sub.label}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </li>
+                  <>
+                    <li key={tab} style={{ position: 'relative' }}>
+                      <div
+                        className={`dermatology-main-item pl-0 flex items-center cursor-pointer text-white font-normal select-none ${isOnMainDermatologyPage ? 'active' : ''}`}
+                        onClick={() => setDermOpen((open) => !open)}
+                      >
+                        {tab}
+                        <span className="ml-20 text-base self-center flex items-center" style={{ marginTop: '2px' }}>
+                          <FaChevronDown style={{marginLeft: '60px', transform: dermOpen ? 'rotate(0deg)' : 'rotate(180deg)', transition: 'transform 0.2s', verticalAlign: 'middle' }} />
+                        </span>
+                      </div>
+                    </li>
+                    {dermOpen && dermatologySubServices.map((sub) => {
+                      const isActive = location.pathname === sub.path;
+                      return (
+                        <li key={sub.path} className={`dermatology-sub-item ${isActive ? 'active' : ''}`} style={{ listStyle: 'none', paddingLeft: '85px' }}>
+                          <Link
+                            to={sub.path}
+                            style={{
+                              color: 'inherit',
+                              textDecoration: 'none',
+                              display: 'block',
+                              width: '100%',
+                              whiteSpace: 'nowrap',
+                              overflow: 'hidden',
+                              textOverflow: 'ellipsis',
+                              maxWidth: '220px',
+                            }}
+                          >
+                            {sub.label}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </>
                 );
               }
               // Only show Hair Restoration, Injectables, and Skin Correcting as main sidebar items
@@ -194,8 +208,9 @@ const Services = ({ selectedTab, setSelectedTab }) => {
                   'Injectables': '/injectables',
                   'Skin Correcting': '/skin-correcting'
                 };
+                const isActive = location.pathname === routeMap[tab];
                 return (
-                  <li key={tab}>
+                  <li key={tab} className={`main-service-item ${isActive ? 'active' : ''}`}>
                     <Link
                       to={routeMap[tab]}
                       style={{

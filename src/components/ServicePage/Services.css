@@ -45,8 +45,60 @@
   transition: background-color 0.3s ease;
 }
 
-.service-page-sidebar li:hover,
-.service-page-sidebar li.active {
+/* Main sidebar items (excluding dermatology) */
+.service-page-sidebar > ul > li:hover,
+.service-page-sidebar > ul > li.active {
+  background-color: #626e7c;
+}
+
+/* Dermatology main item styles */
+.dermatology-main-item {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 10px 42px 10px 8px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dermatology-main-item:hover,
+.dermatology-main-item.active {
+  background-color: #626e7c;
+}
+
+/* Main service items - aligned with dermatology main item */
+.main-service-item {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 10px 42px 10px 8px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.main-service-item:hover,
+.main-service-item.active {
+  background-color: #626e7c;
+}
+
+/* Dermatology sub-items - completely independent */
+.dermatology-sub-item {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 8px 42px 8px 85px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dermatology-sub-item:hover,
+.dermatology-sub-item.active {
   background-color: #626e7c;
 }
 
