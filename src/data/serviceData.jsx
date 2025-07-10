@@ -142,98 +142,47 @@ const serviceData = {
       },
     ],
   },
-  "Skin Rejuvenation": {
-    main: "Skin rejuvenation targets signs of aging and damage to improve skin tone, texture, and appearance. If your skin feels dull, tired, or uneven, our expert treatments can safely restore its natural glow.",
+  "Hair Restoration": {
+    main: "Hair restoration treatments in dermatology focus on stimulating natural hair growth and addressing thinning or hair loss. These therapies work by revitalizing hair follicles, improving scalp health, and encouraging stronger, fuller hair over time.",
     sections: [
       {
-        heading: "Our Approach to Skin Rejuvenation",
-        content: "",
+        heading: "Who should seek treatment?",
+        content: "Individuals experiencing hair thinning, recent hair loss, or weakened hair quality—whether due to genetics, stress, or hormonal changes—can benefit from hair restoration. Early treatment offers the best chance for regrowth and prevention of further loss.",
+      },
+      {
+        heading: "What does it treat?",
+        content: "Hair restoration therapies are effective for:",
         items: [
-          {
-            title: "Skin Assessment & Goal Discussion: ",
-            content:
-              "A thorough skin analysis and discussion with an expert dermatologist to understand your acne type, triggers, and skin goals.",
-              hasBullet: true,
-          },
-          {
-            title: "Customized Treatment Plan ",
-            content:
-              "Based on your needs, we create a personalized plan using the most suitable techniques.",
-              hasBullet: true,
-          },
-          {
-            title: "Multi-Session Approach :",
-            content:
-              "For optimal results, some treatments may be spaced over multiple sessions.",
-              hasBullet: true,
-          },
+          { title: "Thinning hair and receding hairlines", content: "", hasBullet: true },
+          { title: "Recent or patchy hair loss", content: "", hasBullet: true },
+          { title: "Hair weakening due to stress or illness", content: "", hasBullet: true },
+          { title: "Male and female pattern baldness", content: "", hasBullet: true },
+          { title: "Poor scalp circulation or follicle damage", content: "", hasBullet: true },
         ],
       },
       {
-        heading: "Skin Rejuvenation Treatments",
-        content: "",
-        items: [
-          {
-            title: "Laser Rejuvenation :",
-            content:
-              "Reduces fine lines, pigmentation, and enhances skin texture.",
-            hasBullet: true,
-          },
-          {
-            title: "Microneedling : ",
-            content: "Stimulates collagen and smooths out acne scars.",
-            hasBullet: true,
-          },
-          {
-            title: "HydraFacial :",
-            content:
-              "Deeply hydrates and detoxifies, leaving your skin instantly radiant.",
-            hasBullet: true,
-          },
-        ],
+        heading: "Why treat early?",
+        content: "Early intervention helps preserve existing hair, reactivate dormant follicles, and improve overall scalp condition. Timely treatment can slow progression, boost confidence, and support long-term hair health with natural-looking results.",
       },
       {
-        heading: "Before & After Results",
-        content:
-          "Non-invasive treatments that refresh skin, boost collagen, and improve tone, texture, and radiance.",
-          checkNowLink: "/before-&-after/skin-rejuvenation",
+        heading: "Featured Treatment: PRP Scalp Injections",
+        content: "Platelet-Rich Plasma (PRP) Therapy uses your body's own growth factors to stimulate hair follicles. Often referred to as a 'fertilizer' for your hair, this regenerative treatment strengthens hair at the root, promotes growth, and improves hair density—especially effective in early stages of hair thinning or recent loss.",
       },
       {
-        heading: "Why Choose Us for Skin Rejuvenation?",
+        heading: "Why Choose Us for Hair Restoration?",
         content: "",
         items: [
-          {
-            title: "Certified Experts :",
-            content: "Experienced dermatologists ensure safe, expert care.",
-            hasBullet: true,
-          },
-          {
-            title: " Cutting-Edge Technology :",
-            content: "Non-invasive, effective, and up-to-date treatments.",
-            hasBullet: true,
-          },
-          {
-            title: "Clear Pricing :",
-            content: "Honest packages with no surprises.",
-            hasBullet: true,
-          },
+          { title: "Expert Care :", content: "Experienced dermatologists ensure safe, expert hair restoration treatments.", hasBullet: true },
+          { title: "Advanced Technology :", content: "State-of-the-art PRP and hair restoration techniques.", hasBullet: true },
+          { title: "Personalized Plans :", content: "Customized treatment plans tailored to your specific hair loss pattern and goals.", hasBullet: true },
         ],
       },
       {
         heading: "FAQ's",
-       faqs: [
-          {
-            question: "Is skin rejuvenation painful?",
-            answer: "Most treatments cause minimal discomfort.Numbing creams or cooling methods are used to keep you comfortable.",
-          },
-          {
-            question: " How soon can I expect visible results?",
-            answer: "You may notice improvements in a few days, with full results developing over a few weeks as collagen builds.",
-          },
-          {
-            question: "Will I need multiple sessions",
-            answer: " Often, yes. The number of sessions depends on your skin concerns and treatment type, which we’ll discuss during your consultation.",
-          },
+        faqs: [
+          { question: "How long does it take to see results?", answer: "Results typically begin to show within 3-6 months, with continued improvement over time as hair follicles are revitalized." },
+          { question: "Is PRP treatment painful?", answer: "PRP treatments are minimally uncomfortable. We use numbing techniques to ensure your comfort during the procedure." },
+          { question: "How many sessions will I need?", answer: "Most patients require 3-6 sessions spaced 4-6 weeks apart for optimal results, depending on your specific hair loss pattern." },
         ],
       },
     ],

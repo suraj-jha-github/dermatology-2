@@ -60,6 +60,7 @@ const Services = ({ selectedTab, setSelectedTab }) => {
     { label: 'Excision Procedures', path: '/services/excision-procedures' },
     { label: 'Mole & Skin Tag Removal', path: '/services/mole-skin-tag-removal' },
     { label: 'Cryotherapy', path: '/services/cryotherapy' },
+    { label: 'Acne Treatment', path: '/services/acne-treatment' },
     { label: 'Eczema & Psoriasis Care', path: '/services/eczema-psoriasis-care' },
     { label: 'Rosacea Treatment', path: '/services/rosacea-treatment' },
     { label: 'Vitiligo Management', path: '/services/vitiligo-management' },
@@ -186,11 +187,9 @@ const Services = ({ selectedTab, setSelectedTab }) => {
                   </li>
                 );
               }
-              // Keep all other items unchanged
-              if (tab === 'Services' || tab === 'Acne Treatment' || tab === 'Injectables' || tab === 'Skin Rejuvenation') {
-                return index === 0 ? (
-                  <h3 key={tab} className="service-page-title">{tab}</h3>
-                ) : (
+              // Only show Hair Restoration and Injectables as main sidebar items
+              if (tab === 'Hair Restoration' || tab === 'Injectables') {
+                return (
                   <li
                     key={tab}
                     className={selectedTab === tab ? 'active' : ''}
@@ -200,7 +199,7 @@ const Services = ({ selectedTab, setSelectedTab }) => {
                   </li>
                 );
               }
-              // Hide all other tabs from sidebar
+              // Hide all other items from main sidebar
               return null;
             })}
           </ul>

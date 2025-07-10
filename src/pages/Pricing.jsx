@@ -15,7 +15,7 @@ const Pricing = () => (
   <div className="service-page-wrapper">
     {/* Hero Section */}
     <aside  className="service-page-sidebar transition-all duration-300">
-      <h3 className="service-page-title">Pricing</h3>
+      {/* <h3 className="service-page-title">Pricing</h3> */}
       <ul>
         <li className="active">Pricing</li>
       </ul>
