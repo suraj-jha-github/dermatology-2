@@ -26,7 +26,10 @@ const Sidebar = ({ isMenuOpen, toggleMenu }) => {
             <li><NavLink to="/services/injectables" onClick={toggleMenu}>INJECTABLES</NavLink></li>
             <li><NavLink to="/services/acne-treatment" onClick={toggleMenu}>ACNE TREATMENT</NavLink></li> */}
             <li><NavLink to="/pricing" onClick={toggleMenu}>PRICING</NavLink></li>
-            <li><NavLink to="/services/acne-treatment" onClick={toggleMenu}>DERMATOLOGY</NavLink></li>
+            <li><NavLink to="/services/skin-cancer-screenings" onClick={toggleMenu}>DERMATOLOGY</NavLink></li>
+            <li><NavLink to="/services/hair-restoration" onClick={toggleMenu}>HAIR RESTORATION</NavLink></li>
+            <li><NavLink to="/services/injectables" onClick={toggleMenu}>INJECTABLES</NavLink></li>
+            <li><NavLink to="/services/skin-correcting" onClick={toggleMenu}>SKIN CORRECTION</NavLink></li>
             <li><NavLink to="/patient-resources" onClick={toggleMenu}>PATIENT RESOURCES</NavLink></li>
             <li><NavLink to="/pay-bill" onClick={toggleMenu}>PAY BILL</NavLink></li>
             <li><NavLink to="/before-&-after" onClick={toggleMenu}>BEFORE & AFTER</NavLink></li>
