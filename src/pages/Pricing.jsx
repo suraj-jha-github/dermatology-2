@@ -2,6 +2,7 @@ import Breadcrumbs from "@/components/common/BreadCrumbs/BreadCrumbs";
 import Hero from "@/components/common/Hero/Hero";
 import ImageAssets from "@/components/common/ImageAssets";
 import React from "react";
+import '../components/Pricing/Pricing.css'
 
 const Pricing = () => (
   <>
@@ -13,7 +14,7 @@ const Pricing = () => (
       <Breadcrumbs />
   <div className="service-page-wrapper">
     {/* Hero Section */}
-    <aside className="service-page-sidebar transition-all duration-300">
+    <aside  className="service-page-sidebar transition-all duration-300">
       <h3 className="service-page-title">Pricing</h3>
       <ul>
         <li className="active">Pricing</li>
