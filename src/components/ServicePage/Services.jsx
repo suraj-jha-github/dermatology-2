@@ -56,16 +56,16 @@ const Services = ({ selectedTab, setSelectedTab }) => {
 
   // Define Dermatology sub-services for dropdown
   const dermatologySubServices = [
-    { label: 'Skin Cancer Screenings', path: '/services/skin-cancer-screenings' },
-    { label: 'Excision Procedures', path: '/services/excision-procedures' },
-    { label: 'Mole & Skin Tag Removal', path: '/services/mole-skin-tag-removal' },
-    { label: 'Cryotherapy', path: '/services/cryotherapy' },
-    { label: 'Acne Treatment', path: '/services/acne-treatment' },
-    { label: 'Eczema & Psoriasis Care', path: '/services/eczema-psoriasis-care' },
-    { label: 'Rosacea Treatment', path: '/services/rosacea-treatment' },
-    { label: 'Vitiligo Management', path: '/services/vitiligo-management' },
-    { label: 'Hair & Scalp Care', path: '/services/hair-scalp-care' },
-    { label: 'Nail Care', path: '/services/nail-care' },
+    { label: 'Skin Cancer Screenings', path: '/dermatology/skin-cancer-screenings' },
+    { label: 'Excision Procedures', path: '/dermatology/excision-procedures' },
+    { label: 'Mole & Skin Tag Removal', path: '/dermatology/mole-skin-tag-removal' },
+    { label: 'Cryotherapy', path: '/dermatology/cryotherapy' },
+    { label: 'Acne Treatment', path: '/dermatology/acne-treatment' },
+    { label: 'Eczema & Psoriasis Care', path: '/dermatology/eczema-psoriasis-care' },
+    { label: 'Rosacea Treatment', path: '/dermatology/rosacea-treatment' },
+    { label: 'Vitiligo Management', path: '/dermatology/vitiligo-management' },
+    { label: 'Hair & Scalp Care', path: '/dermatology/hair-scalp-care' },
+    { label: 'Nail Care', path: '/dermatology/nail-care' },
   ];
   const [dermOpen, setDermOpen] = useState(false);
   return (
@@ -189,13 +189,28 @@ const Services = ({ selectedTab, setSelectedTab }) => {
               }
               // Only show Hair Restoration, Injectables, and Skin Correcting as main sidebar items
               if (tab === 'Hair Restoration' || tab === 'Injectables' || tab === 'Skin Correcting') {
+                const routeMap = {
+                  'Hair Restoration': '/hair-restoration',
+                  'Injectables': '/injectables',
+                  'Skin Correcting': '/skin-correcting'
+                };
                 return (
-                  <li
-                    key={tab}
-                    className={selectedTab === tab ? 'active' : ''}
-                    onClick={() => setSelectedTab(tab)}
-                  >
-                    {tab}
+                  <li key={tab}>
+                    <Link
+                      to={routeMap[tab]}
+                      style={{
+                        color: 'inherit',
+                        textDecoration: 'none',
+                        display: 'block',
+                        width: '100%',
+                        whiteSpace: 'nowrap',
+                        overflow: 'hidden',
+                        textOverflow: 'ellipsis',
+                        maxWidth: '220px',
+                      }}
+                    >
+                      {tab}
+                    </Link>
                   </li>
                 );
               }

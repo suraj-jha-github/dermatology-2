@@ -46,6 +46,10 @@ const AppContent = ({ isMenuOpen, toggleMenu }) => {
               <Route path="/before-&-after/:sectionSlug?" element={<BeforeAfter />} />
               <Route path="/contact-us" element={<Contact />} />
               <Route path="/services/:serviceSlug?" element={<ServicePage />} />
+              <Route path="/hair-restoration" element={<ServicePage />} />
+              <Route path="/injectables" element={<ServicePage />} />
+              <Route path="/skin-correcting" element={<ServicePage />} />
+              <Route path="/dermatology/:serviceSlug?" element={<ServicePage />} />
             </Routes>
           </div>
         </main>
