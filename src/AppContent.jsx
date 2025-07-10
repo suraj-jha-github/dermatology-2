@@ -13,7 +13,7 @@ import Contact from "./pages/Contact";
 import ServicePage from "./pages/ServicePage";
 import BlogDetail from "./pages/BlogDetail";
 import ChatWidget from "./components/common/ChatWidget";
-
+import Pricing from './pages/Pricing';
 
 
 const AppContent = ({ isMenuOpen, toggleMenu }) => {
@@ -41,6 +41,7 @@ const AppContent = ({ isMenuOpen, toggleMenu }) => {
               <Route path="/pay-bill" element={<PayBill />} />
               <Route path="/blogs" element={<Blog />} />
               <Route path="/blogs/:slug" element={<BlogDetail />} />
+              <Route path="/pricing" element={<Pricing />} />
 
               <Route path="/before-&-after/:sectionSlug?" element={<BeforeAfter />} />
               <Route path="/contact-us" element={<Contact />} />
