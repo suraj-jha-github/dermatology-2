@@ -40,3 +40,47 @@
     display: block;
   }
 }
+
+/* Fix content width for 380px to 768px */
+@media (min-width: 380px) and (max-width: 768px) {
+  .service-page-wrapper {
+    flex-direction: column;
+    padding: 20px 15px;
+    gap: 30px;
+  }
+
+  .service-page-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .service-page-content > .heading-main {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-top: 40px;
+  }
+
+  .service-page-content h2 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+
+  .service-page-content p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    padding-right: 0;
+  }
+
+  .service-buttons {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .call-btn-service,
+  .appt-btn-service {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+}
