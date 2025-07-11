@@ -177,14 +177,7 @@ const serviceData = {
           { title: "Personalized Plans :", content: "Customized treatment plans tailored to your specific hair loss pattern and goals.", hasBullet: true },
         ],
       },
-      {
-        heading: "FAQ's",
-        faqs: [
-          { question: "How long does it take to see results?", answer: "Results typically begin to show within 3-6 months, with continued improvement over time as hair follicles are revitalized." },
-          { question: "Is PRP treatment painful?", answer: "PRP treatments are minimally uncomfortable. We use numbing techniques to ensure your comfort during the procedure." },
-          { question: "How many sessions will I need?", answer: "Most patients require 3-6 sessions spaced 4-6 weeks apart for optimal results, depending on your specific hair loss pattern." },
-        ],
-      },
+     
     ],
   },
   Injectables: {
@@ -277,23 +270,7 @@ const serviceData = {
           },
         ],
       },
-      {
-        heading: "FAQ's",
-        faqs: [
-          {
-            question: "Are injectables painful?",
-            answer: "Most feel only slight discomfort. Numbing cream can be used for added comfort.",
-          },
-          {
-            question: "How long do results last?",
-            answer: "Anti-wrinkle results last 3–4 months; fillers can last 6–18 months depending on the area.",
-          },
-          {
-            question: "When will I see results?",
-            answer: "Wrinkle treatments show in 3–7 days. Fillers give immediate visible results.",
-          },
-        ],
-      },
+      
     ],
   },
   "Skin Correcting": {
@@ -357,23 +334,7 @@ const serviceData = {
           },
         ],
       },
-      {
-        heading: "FAQ's",
-        faqs: [
-          {
-            question: "How long does it take to see results?",
-            answer: "Results typically begin to show within 2-4 weeks, with continued improvement over several months as collagen production increases.",
-          },
-          {
-            question: "Is skin correcting treatment painful?",
-            answer: "Most treatments are minimally uncomfortable. We use numbing techniques to ensure your comfort during the procedure.",
-          },
-          {
-            question: "How many sessions will I need?",
-            answer: "Most patients require 3-6 sessions spaced 4-6 weeks apart for optimal results, depending on your specific skin concerns.",
-          },
-        ],
-      },
+      
     ],
   },
   "Excision Procedures": {
