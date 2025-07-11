@@ -21,10 +21,6 @@ const Sidebar = ({ isMenuOpen, toggleMenu }) => {
           <ul>
             <li><NavLink to="/" end onClick={toggleMenu}>HOME</NavLink></li>
             <li><NavLink to="/about-us/alicia-natalizio-fnp-bc" onClick={toggleMenu}>ABOUT US</NavLink></li>
-            {/* <li><NavLink to="/services/cosmetic-dermatology" onClick={toggleMenu}>COSMETIC DERMATOLOGY</NavLink></li>
-            <li><NavLink to="/services/skin-rejuvenation" onClick={toggleMenu}>SKIN REJUVENATION</NavLink></li>
-            <li><NavLink to="/services/injectables" onClick={toggleMenu}>INJECTABLES</NavLink></li>
-            <li><NavLink to="/services/acne-treatment" onClick={toggleMenu}>ACNE TREATMENT</NavLink></li> */}
             <li><NavLink to="/pricing" onClick={toggleMenu}>PRICING</NavLink></li>
             <li><NavLink to="/dermatology/skin-cancer-screenings" onClick={toggleMenu}>DERMATOLOGY</NavLink></li>
             <li><NavLink to="/hair-restoration" onClick={toggleMenu}>HAIR RESTORATION</NavLink></li>

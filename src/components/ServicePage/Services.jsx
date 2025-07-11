@@ -4,7 +4,7 @@ import Select, { components } from "react-select";
 import { FaChevronDown } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 import "./Services.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import serviceData from "../../data/serviceData";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
@@ -32,6 +32,7 @@ const Services = ({ selectedTab, setSelectedTab }) => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
   const location = useLocation();
+  const navigate = useNavigate();
 
   // Debug: Log selectedTab
   console.log("Services - selectedTab:", selectedTab);
@@ -76,6 +77,48 @@ const Services = ({ selectedTab, setSelectedTab }) => {
       setDermOpen(true);
     }
   }, [location.pathname]);
+
+  // Create custom options for mobile dropdown
+  const createMobileOptions = () => {
+    const options = [];
+    
+    // Add Dermatology as main option
+    options.push({
+      value: 'Dermatology',
+      label: 'DERMATOLOGY',
+      isMain: true
+    });
+    
+    // Add dermatology sub-services as indented options
+    dermatologySubServices.forEach(service => {
+      options.push({
+        value: service.path,
+        label: service.label,
+        isSub: true,
+        parent: 'Dermatology'
+      });
+    });
+    
+    // Add other main services at the bottom
+    const otherServices = [
+      { value: '/hair-restoration', label: 'Hair Restoration' },
+      { value: '/injectables', label: 'Injectables' },
+      { value: '/skin-correcting', label: 'Skin Correcting' }
+    ];
+    
+    otherServices.forEach(service => {
+      options.push({
+        value: service.value,
+        label: service.label,
+        isMain: true
+      });
+    });
+    
+    return options;
+  };
+
+  const mobileOptions = createMobileOptions();
+  
   return (
     <div className="service-page-wrapper">
       <aside className="service-page-sidebar transition-all duration-300">
@@ -83,13 +126,20 @@ const Services = ({ selectedTab, setSelectedTab }) => {
           <div className="service-dropdown-container">
             <Select
               isSearchable={false}
-              value={
-                selectOptions.find((opt) => opt.value === selectedTab) || null
-              }
+              value={mobileOptions.find(opt => opt.value === selectedTab || location.pathname === opt.value) || mobileOptions[0]}
               onChange={(opt) => {
-                setSelectedTab(opt.value);
+                if (opt.isSub) {
+                  // Navigate to the sub-service using React Router
+                  navigate(opt.value);
+                } else if (opt.value === 'Dermatology') {
+                  // Navigate to main dermatology page
+                  navigate('/dermatology/skin-cancer-screenings');
+                } else {
+                  // Navigate to other main services
+                  navigate(opt.value);
+                }
               }}
-              options={selectOptions}
+              options={mobileOptions}
               components={{ DropdownIndicator }}
               menuIsOpen={menuIsOpen}
               onMenuOpen={() => setMenuIsOpen(true)}
@@ -126,10 +176,11 @@ const Services = ({ selectedTab, setSelectedTab }) => {
                   color: state.isSelected 
                     ? "#fff" 
                     : "rgba(255, 255, 255, 0.6)",
-                  fontSize: "16px",
+                  fontSize: state.data.isSub ? "14px" : "16px",
                   padding: "10px 15px",
-                  paddingLeft: "40px",
+                  paddingLeft: state.data.isSub ? "60px" : "40px",
                   fontFamily: "Poppins, sans-serif",
+                  fontWeight: state.data.isSub ? "400" : "500",
                   "&:hover": {
                     backgroundColor: state.isSelected 
                       ? "#626e7c" 
