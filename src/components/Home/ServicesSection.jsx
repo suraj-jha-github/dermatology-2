@@ -27,7 +27,7 @@ const ServicesSection = () => {
     {
       title: "DERMATOLOGY",
       image: ImageAssets.cosmeticServices,
-      link: "/services/skin-cancer-screenings",
+      link: "/dermatology/skin-cancer-screenings",
       description: "",
     },
     {

@@ -377,7 +377,7 @@ const serviceData = {
     ],
   },
   "Excision Procedures": {
-    main: "Removal of skin cancers, cysts, and abnormal growths under local anesthesia.",
+    main: "Excision procedures involve surgically removing unwanted or abnormal tissue such as moles, cysts, tumors, or skin lesions. Commonly done under local anesthesia, the area is cleaned, the tissue is cut out, and the wound is closed with stitches. It's often used for diagnosis (biopsy) or treatment and is generally safe, with minimal risks like scarring or infection.",
     sections: [
       {
         heading: "What Can Be Removed with Excision?",
@@ -511,7 +511,7 @@ const serviceData = {
     ],
   },
   "Mole & Skin Tag Removal": {
-    main: "Safe removal for cosmetic or medical purposes.",
+    main: "Mole & Skin Tag Removal is a quick and safe procedure used to remove unwanted moles or skin tags for cosmetic reasons or to prevent irritation, snagging, or potential health concerns. The treatment is usually done under local anesthesia with minimal discomfort and little to no downtime. It helps achieve smoother, clearer skin with lasting results.",
     sections: [
       {
         heading: "Mole & Lesion Evaluation",
