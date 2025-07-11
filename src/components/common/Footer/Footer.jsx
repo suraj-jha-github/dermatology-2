@@ -18,10 +18,10 @@ const Footer = () => {
         </div>
         <div className="footer-column">
           <h5>SERVICES</h5>
-          <Link to="/services/skin-rejuvenation"><p>Skin Rejuvenation</p></Link>
-          <Link to="/services/injectables"><p>Injectables</p></Link>
-          <Link to="/services/cosmetic-dermatology"><p>Cosmetic Dermatology</p></Link>
-          <Link to="/services/acne-treatment"><p>Acne Treatment</p></Link>
+          <Link to="/dermatology/skin-cancer-screenings"><p>Dermatology</p></Link>
+          <Link to="/hair-restoration"><p>Hair Restoration</p></Link>
+          <Link to="/injectables"><p>Injectables</p></Link>
+          <Link to="/skin-correcting"><p>Skin Correcting</p></Link>
         </div>
         <div className="footer-column">
           <h5>PATIENT RESOURCES</h5>

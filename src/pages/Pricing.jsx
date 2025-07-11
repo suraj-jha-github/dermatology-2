@@ -3,6 +3,7 @@ import Hero from "@/components/common/Hero/Hero";
 import ImageAssets from "@/components/common/ImageAssets";
 import React from "react";
 import '../components/Pricing/Pricing.css'
+import Footer from "@/components/common/Footer/Footer";
 
 const Pricing = () => (
   <>
@@ -21,7 +22,7 @@ const Pricing = () => (
       </ul>
     </aside>
     <section className="service-page-content">
-      <h1 className="heading-main">PRICE LIST</h1>
+      <h1 className="heading-main">Price List</h1>
       <div className="mb-8">
         <h2 style={{ fontFamily: 'Shippori Mincho B1, serif', fontSize: '1.6rem', marginBottom: '1rem', fontWeight: 500 }}>TREATMENTS:</h2>
         <ul style={{ fontFamily: 'Poppins, sans-serif', fontSize: '0.98rem', color: '#373636', marginBottom: '2rem', paddingLeft: 0 }}>
@@ -94,6 +95,7 @@ const Pricing = () => (
       </div>
     </section>
   </div>
+   <Footer />
   </>
 );
 
