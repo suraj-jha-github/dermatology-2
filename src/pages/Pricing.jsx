@@ -8,7 +8,7 @@ import Footer from "@/components/common/Footer/Footer";
 const Pricing = () => (
   <>
    <Hero
-        image={ImageAssets.payBillImage}
+        image={ImageAssets.priceList}
         // heading="PAY BILL"
         showButton={false}
       />
